@@ -1,0 +1,29 @@
+body {
+    font-family: 'Lora', serif;
+}
+
+figure {
+    margin: 0;
+}
+
+.Header {
+    background: url(../../images/background.jpg);
+    background-size: cover;
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Header-title {
+    margin: 0 auto;
+    color: #fafafa;
+    font-size: 2em;
+}
+
+.Header-img {
+    border-radius: 50%;
+    height: 15em;
+}
