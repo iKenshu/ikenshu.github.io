@@ -6,6 +6,15 @@ figure {
     margin: 0;
 }
 
+.alert {
+    background-color: #f54c4c;
+    text-align: center;
+    padding: .5em;
+    color: #fafafa;
+    position: fixed;
+    width: 100%;
+}
+
 .Header {
     background: url(../../images/background.jpg);
     background-size: cover;
