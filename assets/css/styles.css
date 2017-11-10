@@ -6,15 +6,6 @@ figure {
     margin: 0;
 }
 
-.alert {
-    background-color: #f54c4c;
-    text-align: center;
-    padding: .5em;
-    color: #fafafa;
-    position: fixed;
-    width: 100%;
-}
-
 .Header {
     background: url(../../images/background.jpg);
     background-size: cover;
@@ -82,6 +73,20 @@ figure {
     text-align: left;
     padding: 0 1em;
     font-size: .7em;
+}
+
+.Project-description a {
+    color: #6ACAFC;
+    text-decoration: none;
+}
+
+.Project-description a:hover {
+    background-color: #DBF094;
+    color: black;
+    transition: .3s;
+    text-decoration: underline;
+    border-radius: 5px;
+
 }
 
 .Footer {
