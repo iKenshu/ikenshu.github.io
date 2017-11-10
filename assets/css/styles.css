@@ -6,6 +6,15 @@ figure {
     margin: 0;
 }
 
+.alert {
+    background-color: #f54c4c;
+    text-align: center;
+    padding: .5em;
+    color: #fafafa;
+    position: fixed;
+    width: 100%;
+}
+
 .Header {
     background: url(../../images/background.jpg);
     background-size: cover;
@@ -52,6 +61,7 @@ figure {
 .Portfolio-container {
     display: flex; 
     justify-content: space-around;
+    align-items: center;
     flex-flow: row wrap;
 }
 
@@ -65,7 +75,13 @@ figure {
 
 .Project-img {
     width: 100%;
-    height: auto;
+    max-height: 500px;
+}
+
+.Project-description {
+    text-align: left;
+    padding: 0 1em;
+    font-size: .7em;
 }
 
 .Footer {
