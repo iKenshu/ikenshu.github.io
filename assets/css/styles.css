@@ -92,6 +92,32 @@ figure {
 .Footer {
     background-color: #DBF094;
     margin: 0;
-    padding: 1em;
+    padding: 2em;
     text-align: center;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 500px) {
+    .Header-title {
+        font-size: 2em;
+        margin: 1em 0 0 0;
+    }
+    .Header-subtitle {
+        font-size: 1em;
+        margin: 0;
+    }
+
+    .Portfolio {
+        padding: 0;
+    }
+
+    .Portfolio-title {
+        margin: 0;
+        padding: 1em 0;
+    }
+
+    .Footer {
+        padding: .5em;
+    }
 }
