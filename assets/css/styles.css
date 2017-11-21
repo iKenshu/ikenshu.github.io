@@ -1,3 +1,39 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?u28a3w');
+  src:  url('../fonts/icomoon.eot?u28a3w#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?u28a3w') format('truetype'),
+    url('../fonts/icomoon.woff?u28a3w') format('woff'),
+    url('../fonts/icomoon.svg?u28a3w#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook:before {
+  content: "\ea90";
+}
+.icon-twitter:before {
+  content: "\ea96";
+}
+.icon-linkedin:before {
+  content: "\eaca";
+}
+
 body {
     font-family: 'Raleway', serif;
 }
@@ -7,7 +43,7 @@ figure {
 }
 
 .Header {
-    background: url(../../images/background.jpg);
+    background: url(../../images/background.jpg) no-repeat center;
     background-size: cover;
     margin: 0;
     height: 500px;
@@ -52,6 +88,7 @@ figure {
 .Portfolio-container {
     display: flex; 
     justify-content: space-around;
+    align-items: center;
     flex-flow: row wrap;
 }
 
@@ -65,7 +102,41 @@ figure {
 
 .Project-img {
     width: 100%;
-    height: auto;
+    max-height: 500px;
+}
+
+.Project-description {
+    text-align: left;
+    padding: 0 1em;
+    font-size: .7em;
+}
+
+.Project-description a {
+    color: #6ACAFC;
+    text-decoration: none;
+}
+
+.Project-description a:hover {
+    background-color: #DBF094;
+    color: black;
+    transition: .3s;
+    text-decoration: underline;
+    border-radius: 5px;
+
+}
+
+.Contact-social {
+    padding: 4em;
+    display: flex;
+    justify-content: center;
+}
+
+.Contact-social a {
+    text-decoration: none;
+    margin: 0 1em;
+}
+.Contact {
+    text-align: center;
 }
 
 .Footer {
@@ -73,4 +144,30 @@ figure {
     margin: 0;
     padding: 1em;
     text-align: center;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 500px) {
+    .Header-title {
+        font-size: 2em;
+        margin: 1em 0 0 0;
+    }
+    .Header-subtitle {
+        font-size: 1em;
+        margin: 0;
+    }
+
+    .Portfolio {
+        padding: 0;
+    }
+
+    .Portfolio-title {
+        margin: 0;
+        padding: 1em 0;
+    }
+
+    .Footer {
+        padding: .5em;
+    }
 }
