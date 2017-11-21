@@ -35,7 +35,7 @@
 }
 
 body {
-    font-family: 'Raleway', serif;
+    font-family: 'Arvo', serif;
 }
 
 figure {
@@ -109,6 +109,7 @@ figure {
     text-align: left;
     padding: 0 1em;
     font-size: .7em;
+    font-family: 'Raleway', sans-serif;
 }
 
 .Project-description a {
@@ -125,18 +126,28 @@ figure {
 
 }
 
-.Contact-social {
-    padding: 4em;
-    display: flex;
-    justify-content: center;
+.About {
+    padding: 1em;
 }
 
-.Contact-social a {
-    text-decoration: none;
-    margin: 0 1em;
-}
-.Contact {
+.About-title {
     text-align: center;
+    border-bottom: 1px solid #6CE6DD;
+}
+
+.About-description p {
+    background: #fafafa;
+    padding: 1em;
+    margin: 0 auto;
+    width: 50%;
+    white-space: pre-line;
+    line-height: 1.5;
+    font-family: 'Raleway', sans-serif;
+}
+
+.About-description p a {
+    text-decoration: none;
+    color: #6CE6DD;
 }
 
 .Footer {
