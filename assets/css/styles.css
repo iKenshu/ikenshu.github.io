@@ -164,6 +164,13 @@ figure {
 
 /* Media Queries */
 
+@media screen and (max-width: 700px) {
+    .About-description p {
+        width: 80%;
+    }
+    
+}
+
 @media screen and (max-width: 500px) {
     .Header-title {
         font-size: 2em;
@@ -183,7 +190,12 @@ figure {
         padding: 1em 0;
     }
 
+    .About-description p {
+        width: auto;
+
+    }
     .Footer {
         padding: .5em;
     }
 }
+
