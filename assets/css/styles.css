@@ -1,38 +1,42 @@
 @font-face {
-  font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?u28a3w');
-  src:  url('../fonts/icomoon.eot?u28a3w#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?u28a3w') format('truetype'),
-    url('../fonts/icomoon.woff?u28a3w') format('woff'),
-    url('../fonts/icomoon.svg?u28a3w#icomoon') format('svg');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?bjuzcc');
+    src:  url('../fonts/icomoon.eot?bjuzcc#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?bjuzcc') format('truetype'),
+        url('../fonts/icomoon.woff?bjuzcc') format('woff'),
+        url('../fonts/icomoon.svg?bjuzcc#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 [class^="icon-"], [class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
 
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .icon-facebook:before {
-  content: "\ea90";
+    content: "\ea90";
 }
 .icon-twitter:before {
-  content: "\ea96";
+    content: "\ea96";
+}
+.icon-github:before {
+    content: "\eab0";
 }
 .icon-linkedin:before {
-  content: "\eaca";
+    content: "\eaca";
 }
+
 
 body {
     font-family: 'Arvo', serif;
@@ -106,7 +110,6 @@ figure {
     background-color: #fafafa;
     width: 500px;
     margin: 1em;
-    border-radius: 10px;
     overflow: hidden;
 }
 
@@ -158,6 +161,22 @@ figure {
 .About-description p a {
     text-decoration: none;
     color: #6CE6DD;
+}
+
+.About-social {
+    margin: 2em 1em;
+    display: flex;
+    justify-content: center;
+}
+
+.About-link {
+    text-decoration: none;
+    margin: 1em;
+    padding: 1em;
+    background: #6CE6DD;
+    border-radius: 50%;
+    color: #fafafa;
+
 }
 
 .Footer {
