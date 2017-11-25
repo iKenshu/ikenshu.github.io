@@ -70,8 +70,18 @@ figure {
     color: #fafafa;
 }
 .Header-img {
+    height: 150px;
+    width: 150px;
     border-radius: 50%;
-    height: 10em;
+    overflow: hidden;
+    position: relative;
+}
+
+.Header-avatar {
+    object-fit: cover;
+    height: 100%;
+    min-width: 100%;
+    filter: grayscale(100%);
 }
 
 .Portfolio {
