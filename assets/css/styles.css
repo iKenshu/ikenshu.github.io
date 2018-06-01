@@ -1,3 +1,8 @@
+:root {
+    --white: #fafafa;
+    --cyan: #6CE6DD;
+}
+
 @font-face {
     font-family: 'icomoon';
     src:  url('../fonts/icomoon.eot?bjuzcc');
@@ -45,7 +50,6 @@ body {
 figure {
     margin: 0;
 }
-
 .Header {
     background: url(../../images/background.jpg) no-repeat center;
     background-size: cover;
@@ -66,19 +70,27 @@ figure {
 
 .Header-title {
     margin: 0 auto;
-    color: #fafafa;
+    color: var(--white);
     font-size: 4em;
 }
 
 .Header-subtitle {
-    color: #fafafa;
+    color: var(--white);
+    margin: 0;
 }
+
 .Header-img {
     height: 150px;
     width: 150px;
     border-radius: 50%;
     overflow: hidden;
     position: relative;
+}
+
+.Header-img:hover {
+    box-shadow: 1px 1px 35px #d09c87;
+    transform: scale(1.1);
+    transition: .3s;
 }
 
 .Header-avatar {
@@ -88,7 +100,7 @@ figure {
 }
 
 .Portfolio {
-    background-color: #6CE6DD;
+    background-color: var(--cyan);
 }
 
 .Portfolio {
@@ -106,7 +118,7 @@ figure {
 }
 
 .Project {
-    background-color: #fafafa;
+    background-color: var(--white);
     width: 500px;
     margin: 1em;
     overflow: hidden;
@@ -144,22 +156,23 @@ figure {
 
 .About-title {
     text-align: center;
-    border-bottom: 1px solid #6CE6DD;
+    border-bottom: 1px solid var(--cyan);
 }
 
 .About-description p {
-    background: #fafafa;
+    background: var(--white);
     padding: 1em;
     margin: 0 auto;
-    width: 50%;
+    width: 65%;
     white-space: pre-line;
     line-height: 1.5;
     font-family: 'Raleway', sans-serif;
+    font-size: 1.3em;
 }
 
 .About-description p a {
     text-decoration: none;
-    color: #6CE6DD;
+    color: var(--cyan);
 }
 
 .About-social {
@@ -172,10 +185,16 @@ figure {
     text-decoration: none;
     margin: 1em;
     padding: 1em;
-    background: #6CE6DD;
+    background: var(--cyan);
     border-radius: 50%;
-    color: #fafafa;
+    color: var(--white);
 
+}
+
+.About-link:hover {
+    background: var(--white);
+    color: var(--cyan);
+    transition: .3s
 }
 
 .Footer {
@@ -215,6 +234,7 @@ figure {
 
     .About-description p {
         width: auto;
+        font-size: 1em;
 
     }
     .Footer {
