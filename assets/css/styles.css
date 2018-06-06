@@ -50,6 +50,15 @@ body {
 figure {
     margin: 0;
 }
+
+.container {
+    display: grid;
+    grid-template: repeat(4, 100%) / repeat(3, 1fr);
+    grid-template-areas: 'header header header' 
+                            'about about about' 
+                            'portafolio portafolio portafolio' 
+                            'footer footer footer';
+}
 .Header {
     background: url(../../images/background.jpg) no-repeat center;
     background-size: cover;
@@ -58,7 +67,8 @@ figure {
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
+    grid-area: header;
 }
 
 .Header-container {
@@ -101,13 +111,11 @@ figure {
 
 .Portfolio {
     background-color: var(--cyan);
-}
-
-.Portfolio {
     font-size: 1.5em;
     margin: 0 auto;
     text-align: center;
     padding: 1.5em;
+    grid-area: portafolio;
 }
 
 .Portfolio-container {
@@ -152,6 +160,7 @@ figure {
 
 .About {
     padding: 1em;
+    grid-area: about;
 }
 
 .About-title {
@@ -202,6 +211,7 @@ figure {
     margin: 0;
     padding: 1em;
     text-align: center;
+    grid-area: footer;
 }
 
 /* Media Queries */
