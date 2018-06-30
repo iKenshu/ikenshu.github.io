@@ -98,7 +98,7 @@ figure {
 }
 
 .Header-img:hover {
-    box-shadow: 1px 1px 35px #d09c87;
+    box-shadow: 0 0 35px rgba(0, 0, 0, .7);
     transform: scale(1.1);
     transition: .3s;
 }
@@ -130,6 +130,12 @@ figure {
     width: 500px;
     margin: 1em;
     overflow: hidden;
+}
+
+.Project:hover {
+    box-shadow: 0 0 35px rgba(0, 0, 0, .7);
+    transition: .3s;
+    
 }
 
 .Project-img {
