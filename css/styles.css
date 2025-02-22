@@ -1,0 +1,147 @@
+:root {
+    --primary-color: #2d3748;
+    --text-color: #4a5568;
+    --border-color: #e2e8f0;
+    --background-color: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: var(--background-color);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.profile-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.contact-info a {
+    color: var(--primary-color);
+    text-decoration: none;
+    position: relative;
+}
+
+.contact-info a:not(:last-child):after {
+    content: '|';
+    margin-left: 1rem;
+    color: var(--border-color);
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+h2 {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--border-color);
+    margin-bottom: 1rem;
+}
+
+.experience-item {
+    margin-bottom: 1.5rem;
+}
+
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.experience-title {
+    font-weight: bold;
+}
+
+.experience-date {
+    color: var(--text-color);
+    font-size: 0.9rem;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 1.5rem;
+}
+
+li {
+    position: relative;
+    margin-bottom: 0.5rem;
+}
+
+li::before {
+    content: "•";
+    position: absolute;
+    left: -1.5rem;
+    color: var(--primary-color);
+}
+
+.skills-grid {
+    display: grid;
+}
+
+.skill-category {
+    margin-bottom: 0;
+}
+
+@media (max-width: 640px) {
+    body {
+        padding: 1rem;
+    }
+
+    .experience-header {
+        flex-direction: column;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-info a:not(:last-child):after {
+        display: none;
+    }
+}

@@ -1,103 +1,127 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-10606387-8"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-10606387-8');
-    </script>
     <meta charset="UTF-8">
-    <title>Kevin Javier Morales</title>
-    <!-- Rich Links -->
-    <meta property="og:title" content="Kevin Javier Morales">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="http://ikenshu.github.io">
-    <meta property="og:image" content="https://i.imgur.com/Ha4T67G.jpg">
-    <meta property="og:description" content="Python/Django developer - Always trying to learn something new about tech. Venezuelan.">
-    <!-- Responsive -->
-    <meta name="viewport" content="width=device-width", initial-scale=1>
-    <style type="text/css">
-        html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}header{display:block}h1{font-size:2em;margin:.67em 0}figure{display:block}figure{margin:1em 40px}img{border-style:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}body{font-family:'Arvo',serif}figure{margin:0}.Header{background:url(images/background.jpg) no-repeat center;background-size:cover;margin:0;height:500px;width:100%;display:flex;justify-content:center;align-items:center}.Header-container{display:flex;justify-content:center;align-items:center;flex-direction:column}.Header-title{margin:0 auto;color:#fafafa;font-size:4em}.Header-subtitle{color:#fafafa}.Header-img{height:150px;width:150px;border-radius:50%;overflow:hidden;position:relative}.Header-avatar{object-fit:cover;height:100%;min-width:100%}@media screen and (max-width:500px){.Header-title{font-size:2em;margin:1em 0 0}.Header-subtitle{font-size:1em;margin:0}}
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kevin Morales - CV</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-    <div class="container">
-        
-        <header class="Header">
-            <div class="img"></div>
-            <div class="Header-container">
-                <figure class="Header-img">
-                    <img class="Header-avatar" src="images/avatar.jpg" alt="">
-                </figure>
-                <h1 class="Header-title">Kevin Morales</h1>
-                <h2 class="Header-subtitle">Backend Developer</h2>
+    <header>
+        <div class="profile-container">
+            <img src="images/profile.jpg" alt="Kevin Morales" class="profile-image">
+        </div>
+        <h1>Kevin Morales</h1>
+        <div class="contact-info">
+            <a href="mailto:me@kevinmorales.dev">me@kevinmorales.dev</a>
+            <a href="https://kevinmorales.dev/" target="_blank">kevinmorales.dev</a>
+            <a href="https://linkedin.com/in/ikenshu" target="_blank">linkedin.com/in/ikenshu</a>
+        </div>
+    </header>
+
+    <section>
+        <h2>Summary</h2>
+        <p>A Backend Developer with 3 years of experience. My expertise lies in crafting efficient and scalable
+            solutions using technologies such as Python, Django, and FastAPI. Have hands-on experience in cloud service
+            implementation, designing RESTful APIs, and optimizing applications to enhance performance and usability.
+        </p>
+    </section>
+
+    <section>
+        <h2>Experience</h2>
+
+        <div class="experience-item">
+            <div class="experience-header">
+                <div class="experience-title">Backend Developer, Habi -- Colombia</div>
+                <div class="experience-date">Apr. 2023 – Oct. 2024</div>
             </div>
-        </header>
+            <ul>
+                <li>Developed and managed AWS Lambda functions triggered by Amazon EventBridge to automate data
+                    processing and storage tasks, optimizing workflows in cloud architecture.</li>
+                <li>Implemented AWS EventBridge Scheduler to execute scheduled tasks, such as downloading reports and
+                    triggering Lambdas at predefined intervals, reducing the time of this task by 60%</li>
+                <li>Designed DynamoDB tables to store and manage event data, allowing for time-based processing and
+                    triggering further workflows using AWS EventBridge Scheduler.</li>
+                <li>Built and integrated serverless APIs with AWS Lambda using Python and FastAPI, enhancing
+                    communication between systems and optimizing backend processes.</li>
+                <li>Developed CRUD endpoints with FastAPI for internal services, ensuring efficient data management, and
+                    implemented unit tests using Pytest to guarantee reliability.</li>
+                <li>Created Python-based Lambda functions to send automated emails, improving communication workflows by
+                    utilizing FastAPI for triggering specific actions.</li>
+            </ul>
+        </div>
 
-        <section class="About">
-            <h2 class="About-title">Sobre mí</h2>
-            <artcile class="About-description">
-                <p><strong>Hola!</strong>
-
-                Soy un Backend Developer, siempre con las ganas de aprender algo nuevo y crear proyectos increibles. Trato de escribir en <a href="https://platzi.com/@iKenshu">Platzi</a> tutoriales sobre los nuevos conocimientos adquiridos para ayudar a los demás y puedan aprender lo mismo.
-
-                Enamorado de Python por la simplicidad de su sintaxis y todas las cosas que pueden hacerse con él. La mayoría de mis proyectos los he realizado con Django.</p>
-            </artcile>
-            <div class="About-social">
-                <a class="About-link icon-twitter" href="https://twitter.com/ikenshu" target="_blank"></a>
-                <a class="About-link icon-facebook" href="https://facebook.com/ikenshu" target="_blank"></a>
-                <a class="About-link icon-linkedin" href="https://www.linkedin.com/in/ikenshu" target="_blank"></a>
-                <a class="About-link icon-github" href="https://github.com/ikenshu" target="_blank"></a>
+        <div class="experience-item">
+            <div class="experience-header">
+                <div class="experience-title">Product Manager, Tributi -- Colombia</div>
+                <div class="experience-date">Aug. 2022 – Nov. 2022</div>
             </div>
-        </section>
+            <ul>
+                <li>Used Figma to design a new optimization for better use of a feature.</li>
+                <li>Used SQL to extract and show results of an experiment in the pricing page to improve conversion.
+                </li>
+                <li>Listened to the feedback of the support team to implement optimizations in the product.</li>
+                <li>Learned to manage and prioritize the tasks of a development team.</li>
+            </ul>
+        </div>
 
-        <section class="Portfolio">
-            <h2 class="Portfolio-title">Portafolio</h2>
-            <div class="Portfolio-container">
-
-                <!-- List of projects -->
-                <article class="Project">
-                    <img class="Project-img" src="images/movie-review.png">
-                    <figcaption class="Project-title">Movie Review
-                        <p class="Project-description">Una web para realizar reviews de las recientes peliculas creada con HTML, CSS, Boostrap, Django. <a href="https://github.com/iKenshu/movie-app">Github.</a></p>
-                    </figcaption>
-
-                </article>
-                
-                <article class="Project">
-                    <img class="Project-img" src="images/toncan-digital.png">
-                    <figcaption class="Project-title">Toncan Digital
-                        <p class="Project-description">Página web creada con HTML, CSS, JS para una empresa sobre alquiler de fotocopiadoras. <a href="http://toncandigital.com/">Website</a></p>
-                    </figcaption>
-                </article>
-
-                <article class="Project">
-                    <img class="Project-img" src="images/clon-news.png">
-                    <figcaption class="Project-title">Hecker News
-                        <p class="Project-description">Creada para practicar habilidades con Django, HTML, CSS, Boostrap. <a href="https://hnews-clone.herokuapp.com/">Website</a></p>
-                    </figcaption>
-                </article>
-
-                <article class="Project">
-                    <img class="Project-img" src="images/invie.png">
-                    <figcaption class="Project-title">Invie
-                        <p class="Project-description">Proyecto realizado en el curso de desarrollo web de <a href="https://platzi.com">Platzi</a> con animaciones diferentes. <a href="/invie">Website</a></p>
-                    </figcaption>
-                </article>
-
+        <div class="experience-item">
+            <div class="experience-header">
+                <div class="experience-title">Backend Developer</div>
+                <div class="experience-date">Feb. 2022 – Aug. 2022</div>
             </div>
-        </section>
-        <!-- Footer -->
-        <footer class="Footer">
-            <p>Made with ❤️</p>
-        </footer>
-    </div>
-    <!-- CSS -->
-    <link href="https://fonts.googleapis.com/css?family=Arvo|Raleway" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/styles.min.css">
+            <ul>
+                <li>Implemented email notification for the service with SendiBlue API.</li>
+                <li>Automated the process of sending code to the repository.</li>
+                <li>Added new data to the API serializers using Django Rest Framework, enhancing frontend usability.
+                </li>
+                <li>Created a custom migration to fix invalid characters in identification numbers.</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <div class="experience-header">
+                <div class="experience-title">Full Stack Developer, Tocan Digital -- Venezuela</div>
+                <div class="experience-date">Jun. 2016 – Sept. 2016</div>
+            </div>
+            <ul>
+                <li>Developed and maintained a website with HTML, CSS, and JavaScript.</li>
+                <li>Used marketing automation tool MailChimp to manage mailing lists and outreach efforts that help to
+                    increase engagement by 30%</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <strong>Languages:</strong> Python, JavaScript, SQL, HTML, CSS, Go, Rust
+            </div>
+            <div class="skill-category">
+                <strong>Frameworks:</strong> Django, Django REST Framework, FastAPI
+            </div>
+            <div class="skill-category">
+                <strong>Databases:</strong> PostgreSQL, MySQL, DynamoDB
+            </div>
+            <div class="skill-category">
+                <strong>AWS:</strong> DynamoDB, Lambda, EventBridge, Cloudwatch
+            </div>
+            <div class="skill-category">
+                <strong>Tools:</strong> Docker, Git, Postman
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Education</h2>
+        <div class="experience-header">
+            <div class="experience-title">Maracaibo II, Bachiller</div>
+            <div class="experience-date">2012</div>
+        </div>
+    </section>
 </body>
+
 </html>
