@@ -65,6 +65,11 @@ h1 {
     position: relative;
 }
 
+.contact-icons {
+    display: flex;
+    align-content: center;
+}
+
 .contact-info a:not(:last-child):after {
     content: '|';
     margin-left: 1rem;
