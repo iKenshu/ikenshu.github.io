@@ -3,6 +3,7 @@
     --text-color: #4a5568;
     --border-color: #e2e8f0;
     --background-color: #ffffff;
+    --accent-color: #f56565;
 }
 
 * {
@@ -106,6 +107,38 @@ h2 {
     color: var(--text-color);
     font-size: 0.9rem;
 }
+
+.schedule-meeting {
+    text-align: center;
+    margin-bottom: 2rem;
+    background-color: var(--accent-color);
+    padding: 1rem;
+    color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.schedule-meeting h2 {
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+.schedule-meeting p {
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.schedule-button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: white;
+    color: var(--accent-color);
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
 
 ul {
     list-style-type: none;
