@@ -2,9 +2,12 @@
     --primary-color: #2d3748;
     --text-color: #4a5568;
     --secondary-text-color: #fff;
+    --third-text-color: #4a556882;
     --border-color: #e2e8f0;
     --background-color: #ffffff;
     --accent-color: #4E55D4;
+    --font-text: "JetBrains Mono", system-ui, -apple-system, sans-serif;
+    --font-title: "Spectral", system-ui, -apple-system, sans-serif;
 }
 
 * {
@@ -14,7 +17,7 @@
 }
 
 body {
-    font-family: system-ui, -apple-system, sans-serif;
+    font-family: var(--font-text);
     line-height: 1.6;
     color: var(--text-color);
     max-width: 800px;
@@ -25,16 +28,34 @@ body {
 
 header {
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 0.9rem;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
+    color: var(--primary-color);
+    font-family: var(--font-title);
+    margin-bottom: -1rem;
+}
+
+.profile-name {
+    margin-bottom: 2rem;
+}
+
+.profile-title {
+    font-size: 1.5rem;
+    color: var(--third-text-color);
+}
+
+h2 {
+    font-size: 2rem;
     color: var(--primary-color);
     margin-bottom: 1rem;
+    font-family: var(--font-title);
+    border-bottom: 1px solid var(--border-color);
 }
 
 
@@ -60,6 +81,7 @@ h1 {
     gap: 1rem;
     flex-wrap: wrap;
     margin-bottom: 2rem;
+    font-size: 0.8rem;
 }
 
 .contact-info a {
@@ -83,14 +105,6 @@ section {
     margin-bottom: 2rem;
 }
 
-h2 {
-    color: var(--primary-color);
-    font-size: 1.5rem;
-    padding-bottom: 0.5rem;
-    border-bottom: 2px solid var(--border-color);
-    margin-bottom: 1rem;
-}
-
 .experience-item {
     margin-bottom: 1.5rem;
 }
@@ -99,14 +113,16 @@ h2 {
     display: flex;
     justify-content: space-between;
     margin-bottom: 0.5rem;
+    flex-direction: column;
 }
 
 .experience-title {
     font-weight: bold;
+    font-size: 1.2rem;
 }
 
 .experience-date {
-    color: var(--text-color);
+    color: var(--third-text-color);
     font-size: 0.9rem;
 }
 
