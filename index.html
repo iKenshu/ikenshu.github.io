@@ -32,175 +32,253 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Spectral:ital,wght@0,300;0,600;0,700;1,300&display=swap"
         rel="stylesheet">
 
 </head>
 
 <body>
-    <header>
-        <div class="profile-container">
-            <img src="images/profile.jpg" alt="Kevin Morales" class="profile-image">
-        </div>
-        <div class="profile-name">
-            <h1>Kevin Morales</h1>
-            <span class="profile-title">Backend Developer</span>
-        </div>
-        <div class="contact-info">
-            <a href="mailto:me@kevinmorales.xyz" data-umami-event="email-contact">
-                <i class="fas fa-envelope contact-icons"></i>
-                me@kevinmorales.xyz
-            </a>
-            <a href="https://kevinmorales.xyz" target="_blank">
-                <i class="fas fa-globe contact-icons"></i>
-                kevinmorales.xyz
-            </a>
-            <a href="https://linkedin.com/in/ikenshu" target="_blank" data-umami-event="linkedin-profile">
-                <i class="fab fa-linkedin contact-icons"></i>
-                linkedin.com/in/ikenshu
-            </a>
-            <!-- Download CV -->
-            <a href="cv/Kevin-CV-ENG.pdf" download title="Download CV" data-umami-event="download-cv">
-                <i class="fas fa-file-download contact-icons"></i>
-            </a>
+    <div class="scroll-progress"></div>
+
+    <header class="hero-section fade-in-section">
+        <div class="hero-grid">
+            <div class="profile-container">
+                <div class="profile-image-wrapper">
+                    <img src="images/profile.jpg" alt="Kevin Morales" class="profile-image">
+                    <div class="profile-border"></div>
+                </div>
+            </div>
+            <div class="profile-content">
+                <div class="profile-name">
+                    <h1 id="typewriter-name"></h1>
+                    <span class="profile-title">Backend Developer</span>
+                    <div class="experience-badge">
+                        <span class="badge-number" id="years-experience">4</span>
+                        <span class="badge-label">years crafting systems</span>
+                    </div>
+                </div>
+                <div class="contact-info">
+                    <a href="mailto:me@kevinmorales.xyz" data-umami-event="email-contact" class="contact-link">
+                        <span class="contact-text">me@kevinmorales.xyz</span>
+                    </a>
+                    <a href="https://kevinmorales.xyz" target="_blank" class="contact-link">
+                        <span class="contact-text">kevinmorales.xyz</span>
+                    </a>
+                    <a href="https://linkedin.com/in/ikenshu" target="_blank" data-umami-event="linkedin-profile" class="contact-link">
+                        <span class="contact-text">linkedin.com/in/ikenshu</span>
+                    </a>
+                    <a href="cv/Kevin-CV-ENG.pdf" download title="Download CV" data-umami-event="download-cv" class="contact-link download-cv">
+                        <i class="fas fa-file-download"></i>
+                        <span class="contact-text">Download CV</span>
+                    </a>
+                </div>
+            </div>
         </div>
     </header>
 
-    <section>
-        <h2>Summary</h2>
-        <p>Backend Developer with 4 years of experience building scalable and efficient systems using Python, Django, and FastAPI.
+    <section class="summary-section fade-in-section">
+        <div class="section-header">
+            <h2>Summary</h2>
+            <div class="section-decoration"></div>
+        </div>
+        <p class="summary-text">Backend Developer with 4 years of experience building scalable and efficient systems using Python, Django, and FastAPI.
         Skilled in serverless architectures, RESTful API design, and cloud services (AWS), with a strong focus on performance
         optimization and reliability.
         </p>
     </section>
 
-    <section>
-        <h2>Experience</h2>
-
-        <div class="experience-item">
-            <div class="experience-header">
-                <div class="experience-title">Backend Developer</div>
-                <div class="experience-company">K2</div>
-                <div class="experience-date">Aug. 2025 – Jan. 2026, Spain</div>
-            </div>
-            <ul>
-                <li>Developed the user registration and login flow using Django and Redis, implementing OTP and Magic Link
-                    authentication with rate limiting to enhance security.</li>
-                <li>Designed and implemented the database architecture and schema from scratch, ensuring scalability, normalization,
-                    and performance for a new company product.</li>
-                <li>Collaborated on deployment automation using GitHub Actions and configured environments on AWS EC2, ensuring
-                    consistent and efficient development workflows.</li>
-                <li>Integrated OpenAI API to deliver AI-powered features, handling prompt design, response validation, and rate limiting
-                    in production environments.</li>
-                <li>Implemented a Retrieval Augmented Generation (RAG) system using OpenAI embeddings, Pinecone, and n8n to
-                    retrieve contextual knowledge and improve response accuracy.</li>
-            </ul>
+    <section class="experience-section fade-in-section">
+        <div class="section-header">
+            <h2>Experience</h2>
+            <div class="section-decoration"></div>
         </div>
 
-        <div class="experience-item">
-            <div class="experience-header">
-                <div class="experience-title">Backend Developer</div>
-                <div class="experience-company">Habi</div>
-                <div class="experience-date">Apr. 2023 – Oct. 2024, Colombia</div>
+        <div class="experience-timeline">
+            <div class="experience-item fade-in-section">
+                <div class="timeline-node">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-line"></div>
+                </div>
+                <div class="experience-content">
+                    <div class="experience-header">
+                        <div class="experience-title-group">
+                            <div class="experience-title">Backend Developer</div>
+                            <div class="experience-company">K2</div>
+                        </div>
+                        <div class="experience-date">Aug. 2025 – Jan. 2026, Spain</div>
+                    </div>
+                    <ul>
+                        <li>Developed the user registration and login flow using Django and Redis, implementing OTP and Magic Link
+                            authentication with rate limiting to enhance security.</li>
+                        <li>Designed and implemented the database architecture and schema from scratch, ensuring scalability, normalization,
+                            and performance for a new company product.</li>
+                        <li>Collaborated on deployment automation using GitHub Actions and configured environments on AWS EC2, ensuring
+                            consistent and efficient development workflows.</li>
+                        <li>Integrated OpenAI API to deliver AI-powered features, handling prompt design, response validation, and rate limiting
+                            in production environments.</li>
+                        <li>Implemented a Retrieval Augmented Generation (RAG) system using OpenAI embeddings, Pinecone, and n8n to
+                            retrieve contextual knowledge and improve response accuracy.</li>
+                    </ul>
+                </div>
             </div>
-            <ul>
-                <li>Developed and managed AWS Lambda functions triggered by Amazon EventBridge to automate data
-                    processing and storage tasks, optimizing workflows in cloud architecture.</li>
-                <li>Implemented AWS EventBridge Scheduler to execute scheduled tasks, such as downloading reports and
-                    triggering Lambdas at predefined intervals, reducing the time of this task by 60%</li>
-                <li>Designed DynamoDB tables to store and manage event data, allowing for time-based processing and
-                    triggering further workflows using AWS EventBridge Scheduler.</li>
-                <li>Built and integrated serverless APIs with AWS Lambda using Python and FastAPI, enhancing
-                    communication between systems and optimizing backend processes.</li>
-                <li>Developed CRUD endpoints with FastAPI for internal services, ensuring efficient data management, and
-                    implemented unit tests using Pytest to guarantee reliability.</li>
-                <li>Created Python-based Lambda functions to send automated emails, improving communication workflows by
-                    utilizing FastAPI for triggering specific actions.</li>
-            </ul>
-        </div>
 
-        <div class="experience-item">
-            <div class="experience-header">
-                <div class="experience-title">Product Manager</div>
-                <div class="experience-company">Tributi</div>
-                <div class="experience-date">Aug. 2022 – Nov. 2022, Colombia</div>
+            <div class="experience-item fade-in-section">
+                <div class="timeline-node">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-line"></div>
+                </div>
+                <div class="experience-content">
+                    <div class="experience-header">
+                        <div class="experience-title-group">
+                            <div class="experience-title">Backend Developer</div>
+                            <div class="experience-company">Habi</div>
+                        </div>
+                        <div class="experience-date">Apr. 2023 – Oct. 2024, Colombia</div>
+                    </div>
+                    <ul>
+                        <li>Developed and managed AWS Lambda functions triggered by Amazon EventBridge to automate data
+                            processing and storage tasks, optimizing workflows in cloud architecture.</li>
+                        <li>Implemented AWS EventBridge Scheduler to execute scheduled tasks, such as downloading reports and
+                            triggering Lambdas at predefined intervals, reducing the time of this task by 60%</li>
+                        <li>Designed DynamoDB tables to store and manage event data, allowing for time-based processing and
+                            triggering further workflows using AWS EventBridge Scheduler.</li>
+                        <li>Built and integrated serverless APIs with AWS Lambda using Python and FastAPI, enhancing
+                            communication between systems and optimizing backend processes.</li>
+                        <li>Developed CRUD endpoints with FastAPI for internal services, ensuring efficient data management, and
+                            implemented unit tests using Pytest to guarantee reliability.</li>
+                        <li>Created Python-based Lambda functions to send automated emails, improving communication workflows by
+                            utilizing FastAPI for triggering specific actions.</li>
+                    </ul>
+                </div>
             </div>
-            <ul>
-                <li>Used Figma to design a new optimization for better use of a feature.</li>
-                <li>Used SQL to extract and show results of an experiment in the pricing page to improve conversion.
-                </li>
-                <li>Listened to the feedback of the support team to implement optimizations in the product.</li>
-                <li>Learned to manage and prioritize the tasks of a development team.</li>
-            </ul>
-        </div>
 
-        <div class="experience-item">
-            <div class="experience-header">
-                <div class="experience-title">Backend Developer</div>
-                <div class="experience-company">Tributi</div>
-                <div class="experience-date">Feb. 2022 – Aug. 2022, Colombia</div>
+            <div class="experience-item fade-in-section">
+                <div class="timeline-node">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-line"></div>
+                </div>
+                <div class="experience-content">
+                    <div class="experience-header">
+                        <div class="experience-title-group">
+                            <div class="experience-title">Product Manager</div>
+                            <div class="experience-company">Tributi</div>
+                        </div>
+                        <div class="experience-date">Aug. 2022 – Nov. 2022, Colombia</div>
+                    </div>
+                    <ul>
+                        <li>Used Figma to design a new optimization for better use of a feature.</li>
+                        <li>Used SQL to extract and show results of an experiment in the pricing page to improve conversion.
+                        </li>
+                        <li>Listened to the feedback of the support team to implement optimizations in the product.</li>
+                        <li>Learned to manage and prioritize the tasks of a development team.</li>
+                    </ul>
+                </div>
             </div>
-            <ul>
-                <li>Implemented email notification for the service with SendiBlue API.</li>
-                <li>Automated the process of sending code to the repository.</li>
-                <li>Added new data to the API serializers using Django Rest Framework, enhancing frontend usability.
-                </li>
-                <li>Created a custom migration to fix invalid characters in identification numbers.</li>
-            </ul>
-        </div>
 
-        <div class="experience-item">
-            <div class="experience-header">
-                <div class="experience-title">SEO Specialist</div>
-                <div class="experience-company">Platzi</div>
-                <div class="experience-date">Feb. 2021 – Dic. 2021, Colombia</div>
+            <div class="experience-item fade-in-section">
+                <div class="timeline-node">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-line"></div>
+                </div>
+                <div class="experience-content">
+                    <div class="experience-header">
+                        <div class="experience-title-group">
+                            <div class="experience-title">Backend Developer</div>
+                            <div class="experience-company">Tributi</div>
+                        </div>
+                        <div class="experience-date">Feb. 2022 – Aug. 2022, Colombia</div>
+                    </div>
+                    <ul>
+                        <li>Implemented email notification for the service with SendiBlue API.</li>
+                        <li>Automated the process of sending code to the repository.</li>
+                        <li>Added new data to the API serializers using Django Rest Framework, enhancing frontend usability.
+                        </li>
+                        <li>Created a custom migration to fix invalid characters in identification numbers.</li>
+                    </ul>
+                </div>
             </div>
-            <ul>
-                <li>Optimize platform courses to appear on the first page of Google results</li>
-                <li>Build interlinking between blogs and tutorials to help the positioning of courses and classes.</li>
-            </ul>
+
+            <div class="experience-item fade-in-section">
+                <div class="timeline-node">
+                    <div class="timeline-dot"></div>
+                </div>
+                <div class="experience-content">
+                    <div class="experience-header">
+                        <div class="experience-title-group">
+                            <div class="experience-title">SEO Specialist</div>
+                            <div class="experience-company">Platzi</div>
+                        </div>
+                        <div class="experience-date">Feb. 2021 – Dic. 2021, Colombia</div>
+                    </div>
+                    <ul>
+                        <li>Optimize platform courses to appear on the first page of Google results</li>
+                        <li>Build interlinking between blogs and tutorials to help the positioning of courses and classes.</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section>
-        <h2>Skills</h2>
+    <section class="skills-section fade-in-section">
+        <div class="section-header">
+            <h2>Skills</h2>
+            <div class="section-decoration"></div>
+        </div>
         <div class="skills-grid">
             <div class="skill-category">
-                <strong>Languages:</strong> Python, JavaScript, SQL, HTML, CSS, Go, Rust
+                <span class="skill-label">Languages:</span>
+                <span class="skill-text">Python, JavaScript, SQL, HTML, CSS, Go, Rust</span>
             </div>
             <div class="skill-category">
-                <strong>Frameworks:</strong> Django, Django REST Framework, FastAPI
+                <span class="skill-label">Frameworks:</span>
+                <span class="skill-text">Django, Django REST Framework, FastAPI</span>
             </div>
             <div class="skill-category">
-                <strong>Databases:</strong> PostgreSQL, MySQL, DynamoDB
+                <span class="skill-label">Databases:</span>
+                <span class="skill-text">PostgreSQL, MySQL, DynamoDB</span>
             </div>
             <div class="skill-category">
-                <strong>AWS:</strong> DynamoDB, Lambda, EventBridge, Cloudwatch
+                <span class="skill-label">AWS:</span>
+                <span class="skill-text">DynamoDB, Lambda, EventBridge, Cloudwatch</span>
             </div>
             <div class="skill-category">
-                <strong>Tools:</strong> Docker, Git, Postman
+                <span class="skill-label">Tools:</span>
+                <span class="skill-text">Docker, Git, Postman</span>
             </div>
             <div class="skill-category">
-                <strong>Soft Skills:</strong> Problem solving, Teamwork, Communication, Time Management
+                <span class="skill-label">Soft Skills:</span>
+                <span class="skill-text">Problem solving, Teamwork, Communication, Time Management</span>
             </div>
         </div>
     </section>
 
-    <section>
+    <section class="cta-section fade-in-section">
         <div class="schedule-meeting">
             <h2>Wanna talk?</h2>
-            <p>You can schedule a meeting with me by clicking the button below. We cant talk about work opportunities or projects.</p>
-            <a href="https://cal.com/ikenshu" target="_blank" class="schedule-button" data-umami-event="schedule-meeting">Yes, let's talk</a>
-    </section>
-
-
-    <section>
-        <h2>Education</h2>
-        <div class="experience-header">
-            <div class="experience-title">Maracaibo II, Bachiller</div>
-            <div class="experience-date">2012</div>
+            <p>You can schedule a meeting with me by clicking the button below. We can talk about work opportunities or projects.</p>
+            <a href="https://cal.com/ikenshu" target="_blank" class="schedule-button" data-umami-event="schedule-meeting">
+                <span>Yes, let's talk</span>
+                <span class="button-arrow">→</span>
+            </a>
         </div>
     </section>
+
+    <section class="education-section fade-in-section">
+        <div class="section-header">
+            <h2>Education</h2>
+            <div class="section-decoration"></div>
+        </div>
+        <div class="education-item">
+            <div class="education-title">Maracaibo II, Bachiller</div>
+            <div class="education-date">2012</div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <p>Built with care · <span id="current-year"></span></p>
+    </footer>
+
+    <script src="js/main.js"></script>
 </body>
 
 </html>
